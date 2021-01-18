@@ -13,6 +13,8 @@ def expand_letter_ranges(string_of_letters):
         '''
     pass
 
+## TESTS BELOW
+
 expand_letter_ranges_examples = [
     ("", []),
     ("a-f", ['A','B','C','D','E','F']),

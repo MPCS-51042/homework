@@ -5,6 +5,8 @@ def find_numbers():
         ABC = A*B*C*(A+B+C)
     '''
 
+## TESTS BELOW
+
 solution = [
     'For 1, 3, and 5, the equation solution is 135',
     'For 1, 4, and 4, the equation solution is 144'

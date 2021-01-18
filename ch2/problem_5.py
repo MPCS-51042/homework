@@ -165,6 +165,8 @@ def find_day(dates):
     '''
     pass
 
+## TESTS BELOW
+
 find_day_examples = [
     ([""], ["Invalid Entry"]),
     (["/"], ["Invalid Entry"]),

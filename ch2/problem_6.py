@@ -26,6 +26,8 @@ def power_status(grid, row_bounds, col_bounds):
     '''
     pass
 
+## TESTS BELOW
+
 neighborhood_grid = [
     [True,  True,  True],
     [True,  False, False],

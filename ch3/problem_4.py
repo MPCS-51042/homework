@@ -10,3 +10,22 @@ def taxes_owed(income):
             taxes owed (float)
         '''
     pass
+
+#TESTS BELOW
+
+from test import test
+
+tax_examples = [
+    (40000, 0.0),
+    (42000, 40.0),
+    (70000, 900.0),
+    (100000, 2600.0),
+    (125000, 4450.0),
+    (187000, 10910.0),
+    (238000, 18100.0),
+    (1000000, 170400.0),
+]
+
+if __name__ == '__main__':
+    test(function=taxes_owed, examples=tax_examples)
+

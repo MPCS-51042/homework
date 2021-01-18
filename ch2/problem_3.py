@@ -13,6 +13,8 @@ def mean(string_of_numbers):
         '''
     pass
 
+## TESTS BELOW
+
 mean_examples = [
     ("", 0.0),
     ("1", 1.0),

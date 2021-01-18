@@ -7,3 +7,13 @@ def inflection_point():
         5% income tax.
     '''
     pass
+
+## TESTS BELOW
+
+inflection_income = inflection_point()
+
+if inflection_income == 163334.0:
+    print(f"Yep, ${inflection_income} is the income at which someone starts paying more in graduated income tax than with the flat rate.")
+else:
+    print("Nope, try again.")
+
