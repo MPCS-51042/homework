@@ -2,8 +2,10 @@ def maketuple():
     pass
 
 ## TESTS BELOW
-
-from ..test_runners import Test
+import sys
+sys.path.append("..")
+from test_runners import Test, first_digit
+sys.path.remove('..')
 
 @maketuple
 def return_func(func): return func

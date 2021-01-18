@@ -2,11 +2,14 @@ def lru_cache(maxsize=0):
     pass
 
 ## TESTS BELOW
-
-from ..test_runners import Test
+import sys
+sys.path.append("..")
+from test_runners import Test, first_digit
+sys.path.remove('..')
 
 import math
 import cmath
+
 @lru_cache(maxsize=2)
 def solve_quadratic(a, b, c):
     """Solve the equation ax^2 + bx + c = 0"""

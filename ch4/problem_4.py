@@ -2,8 +2,10 @@ def accepts():
     pass
 
 # TESTS BELOW
-
-from ..test_runners import Test
+import sys
+sys.path.append("..")
+from test_runners import Test, first_digit
+sys.path.remove('..')
 
 @accepts(int, int)
 def sum(a, b): return a + b

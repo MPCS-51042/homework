@@ -2,8 +2,10 @@ def vectorize():
     pass
 
 ## TESTS BELOW
-
-from test_runners import Test
+import sys
+sys.path.append("..")
+from test_runners import Test, first_digit
+sys.path.remove('..')
 
 vectorize_examples = [
     (int, [], []),
