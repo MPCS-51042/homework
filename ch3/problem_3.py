@@ -1,3 +1,6 @@
+from collections import defaultdict
+from string import punctuation
+
 def fill_completions(fd):
     pass
 
