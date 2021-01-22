@@ -1,3 +1,6 @@
+from itertools import product
+from pprint import pprint
+
 def full_paths(path_components, base_path='/'):
     pass
 

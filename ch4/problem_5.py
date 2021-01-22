@@ -1,3 +1,6 @@
+from collections import OrderedDict, namedtuple
+from functools import wraps
+
 def lru_cache(maxsize=0):
     pass
 
