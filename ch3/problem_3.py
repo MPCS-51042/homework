@@ -40,5 +40,5 @@ if find_completions("multis", c_dict) != set():
     issues += 1
     print("Looks like the multis prefix did not return the correct response of an empty set.")
 
-print(f"{4 - issue_counter} out of 4 checks succeeded.")
+print(f"{4 - issues} out of 4 checks succeeded.")
 
