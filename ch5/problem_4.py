@@ -22,3 +22,30 @@ pitch_errors = [
 ]
 
 Test(examples=pitch_errors, test_class=Pitch).pitch_errors()
+
+pitch_examples = [
+    (Pitch('d♭2'), Pitch('C#2')),
+    (Pitch('d♭2').__repr__(), 'C#2'),
+    (Pitch('F♭4'), Pitch('E4')),
+    (Pitch('c#2').__repr__(), 'C#2'),
+    (Pitch('G6').octave, 6),
+    (Pitch('D3').semitone, 2),
+    (Pitch('A3') + 4, Pitch('C#4')),
+    (Pitch('C#4') - 5, Pitch('G#3')),
+    ((Pitch('C7') += 4).semitone, 0),
+    ((Pitch('C7') += 4).octave, 7),
+    ((Pitch('C7') -= 4).semitone, 8),
+    ((Pitch('c7') -= 4).octave, 6),
+    (Pitch('c4') - Pitch('C3'), 12),
+    (Pitch('G#2') - Pitch('F#3'), -10),
+    (Pitch('A5').frequency(), 880.0),
+    (Pitch.from_frequency(170), Pitch('F3')),
+    (str(Pitch('A4') == Pitch('A4')), 'True'),
+    (str(Pitch('A4') != Pitch('A4')), 'False'),
+    (str(Pitch('A5') >= Pitch('A4')), 'True'),
+    (str(Pitch('c#3') < Pitch('A4')), 'True'),
+    (str(Pitch('A4') <= Pitch('A4')), 'True'),
+    (str(Pitch('d♭2') > Pitch('c#2')), 'False')
+]
+
+Test(examples=pitch_examples).equivalence()
