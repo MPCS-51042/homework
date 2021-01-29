@@ -30,7 +30,7 @@
 
 import sys
 sys.path.insert(0, '..')
-from course_utils import Test, first_digit
+from test_runners import Test, first_digit
 sys.path.remove('..')
 
 from problem_1 import unique

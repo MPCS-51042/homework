@@ -34,7 +34,7 @@ Fraction(4, 0)
 
 import sys
 sys.path.insert(0, '..')
-from course_utils import Test
+from test_runners import Test
 sys.path.remove('..')
 
 from problem_1 import Fraction
@@ -67,7 +67,7 @@ Test(examples=fraction_examples).equivalence()
 
 import sys
 sys.path.insert(0, '..')
-from course_utils import Test
+from test_runners import Test
 sys.path.remove('..')
 
 from problem_2 import Fraction
@@ -132,7 +132,7 @@ Test(examples=fraction_examples).equivalence()
 
 import sys
 sys.path.insert(0, '..')
-from course_utils import Test
+from test_runners import Test
 sys.path.remove('..')
 
 from problem_3 import Pitch
@@ -160,7 +160,7 @@ Test(examples=pitch_errors, test_class=Pitch).pitch_errors()
 
 import sys
 sys.path.insert(0, '..')
-from course_utils import Test
+from test_runners import Test
 sys.path.remove('..')
 
 from problem_3 import Pitch
