@@ -2,8 +2,8 @@ def vectorize():
     pass
 
 ## TESTS BELOW
-import sys
-sys.path.append("..")
+    import sys
+    sys.path.append("..")
 from test_runners import Test, first_digit
 sys.path.remove('..')
 

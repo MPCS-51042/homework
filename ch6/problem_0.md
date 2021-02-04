@@ -1,0 +1,1 @@
+1. Knowing what you now know about when to consider a function-based approach versus an object-based approach, why do you think we made these choices?
