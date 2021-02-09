@@ -30,7 +30,7 @@ class StreamTests(Test):
                 .as_list()
         ).equals(["holy", "forking"])
 
-    def test_filter(self):
+    def test_reduce(self):
         assert_that(
             Stream(["holy", "forking", "shirtballs"]) \
                 .reduce(lambda x, y: x + y)
